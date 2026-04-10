@@ -1,0 +1,864 @@
+/* 
+======================================================
+   REFINED CORPORATE LOGISTICS THEME OVERRIDES
+======================================================
+   Color System:
+   Primary Blue: #0B3C5D
+   Accent Blue: #0F52BA
+   Secondary Blue: #1E3A8A
+   White Base: #FFFFFF
+   Soft Background: #F8FAFC
+   Menu Text: #0B3C5D
+======================================================
+*/
+
+/* 
+======================================================
+   1. BRUTE FORCE REMOVAL OF DECORATIVE SHAPES
+======================================================
+*/
+.shape-image,
+.shape,
+.icon-dots,
+.bg-pattern,
+.bg-shape,
+.layer-shape,
+.anim-icon,
+.bounce-x,
+.bounce-y,
+.flaticon-world,
+.flaticon-map,
+.flaticon-global,
+.anim-shape,
+.bg-image::before,
+.bg-image::after,
+.pattern-layer,
+.overlay-shape,
+.map-pattern,
+.dotted-pattern,
+.cross-pattern,
+svg polygon,
+svg path[fill="#ff0000"],
+svg path[fill="red"],
+.slider-shape,
+.tp-parallax-wrap:not(:has(h1)):not(:has(.text)):not(:has(.sub-title)):not(:has(a)),
+.tp-dottedoverlay {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    background-image: none !important;
+}
+
+[data-bg],
+[data-background] {
+    background-image: none !important;
+}
+
+/* Clear legacy data-bgcolor */
+[data-bgcolor] {
+    background-color: transparent !important;
+}
+
+
+/* 
+======================================================
+   2. GLOBAL & TYPOGRAPHY
+======================================================
+*/
+body,
+html {
+    background-color: #FFFFFF !important;
+    color: #333333 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sec-title h2,
+.sec-title .title {
+    color: #0B3C5D !important;
+    font-family: inherit !important;
+}
+
+.sub-title,
+.subtitle,
+.sec-title .sub-title {
+    color: #0F52BA !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: 600 !important;
+}
+
+.accent-blue,
+.text-accent,
+h1 span,
+h2 span,
+.sec-title h2 span,
+.title span {
+    color: #0F52BA !important;
+}
+
+a {
+    color: #0F52BA !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #1E3A8A !important;
+}
+
+
+/* 
+======================================================
+   HERO / MAIN SLIDER (Global)
+======================================================
+*/
+.banner-section,
+.main-slider,
+.slide-item {
+    background: linear-gradient(135deg, #0B3C5D, #0F52BA) !important;
+    background-image: linear-gradient(135deg, #0B3C5D, #0F52BA) !important;
+    background-color: #0B3C5D !important;
+}
+
+.banner-section .bg-image {
+    background-image: none !important;
+    /* Strip original imagery for solid gradient */
+}
+
+.banner-section .content-box h1,
+.banner-section .content-box p,
+.banner-section .text,
+.banner-section .sub-title {
+    color: #FFFFFF !important;
+}
+
+
+/* 
+======================================================
+   NAVBAR (Solid White)
+======================================================
+*/
+.main-header {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+.main-header .header-lower {
+    background-color: #FFFFFF !important;
+    border-bottom: none !important;
+    height: 80px !important;
+    max-height: 80px !important;
+}
+
+.main-header .header-lower .main-box {
+    height: 80px !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.main-header .header-lower .logo-box {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    overflow: hidden !important;
+}
+
+.main-header .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header .logo img {
+    max-height: none !important;
+    height: 130px !important;
+    /* Slightly reduced for better framing */
+    width: auto !important;
+    object-fit: contain;
+    transform: none !important;
+    margin: 0 !important;
+}
+
+.header-style-one .header-lower .logo-box:before {
+    display: none !important;
+}
+
+.main-menu .navigation>li>a {
+    color: #0B3C5D !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.main-menu .navigation>li:hover>a,
+.main-menu .navigation>li.current>a {
+    color: #0F52BA !important;
+}
+
+.main-header .info-btn-two {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 10px 18px 10px 62px !important;
+    transition: transform 0.22s ease, background 0.22s ease !important;
+}
+
+.main-header .info-btn-two:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 24px rgba(15, 82, 186, 0.28) !important;
+    background: #1a4799 !important;
+}
+
+.main-header .info-btn-two:hover i {
+    color: #fff !important;
+}
+
+.main-header .info-btn-two:hover strong {
+    color: #fff !important;
+}
+
+.main-header .info-btn-two:hover small {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.main-header .info-btn-two strong,
+.main-header .info-btn-two small {
+    color: #0B3C5D !important;
+}
+
+.main-header .info-btn-two i {
+    color: #0F52BA !important;
+    left: 16px !important;
+}
+
+.main-header .social-icon-two li a i {
+    color: #FFFFFF !important;
+}
+
+.mobile-menu .menu-box,
+.mobile-menu .nav-logo {
+    background-color: #FFFFFF !important;
+}
+
+.mobile-menu .navigation li>a {
+    color: #0B3C5D !important;
+}
+
+.logo img,
+.nav-logo img,
+.main-header img {
+    border-radius: 0 !important;
+    filter: none !important;
+}
+
+/* 
+======================================================
+   GLOBAL BUTTONS
+======================================================
+*/
+.theme-btn,
+.btn-style-one,
+.btn-primary {
+    background-color: #0F52BA !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 6px !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.theme-btn:hover,
+.btn-style-one:hover,
+.btn-primary:hover {
+    background-color: #1E3A8A !important;
+    color: #FFFFFF !important;
+}
+
+.btn-secondary,
+.btn-style-two {
+    background-color: #E5E7EB !important;
+    color: #333333 !important;
+    border-radius: 6px !important;
+}
+
+
+/* 
+======================================================
+   SECTION 1: SERVICES / STATS AREA (.services-section)
+======================================================
+*/
+.services-section {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+}
+
+/* Kill the beige pseudo-element box that bleeds behind the heading */
+.services-section .carousel-outer::before {
+    display: none !important;
+    content: none !important;
+}
+
+.services-section .sec-title,
+.services-section .sec-title .sub-title-outer {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 30px !important;
+}
+
+.services-section .project-block .inner-box {
+    border: 2px solid #0F52BA !important;
+    border-radius: 8px !important;
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease !important;
+}
+
+.services-section .project-block .inner-box:hover {
+    opacity: 1 !important;
+    background-color: #0F52BA !important;
+    border-color: #0F52BA !important;
+    box-shadow: 0 8px 28px rgba(15, 82, 186, 0.35) !important;
+}
+
+.services-section .project-block .inner-box:hover .image img {
+    transform: scale(1.06) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.services-section .project-block .inner-box .image img {
+    transition: transform 0.3s ease !important;
+}
+
+.services-section .project-block .inner-box:hover .title,
+.services-section .project-block .inner-box:hover .title a {
+    color: #ffffff !important;
+}
+
+.services-section .project-block .inner-box .image {
+    height: 420px !important;
+    overflow: hidden !important;
+}
+
+.services-section .project-block .inner-box .image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.services-section .icon,
+.services-section .icon-box {
+    color: #0F52BA !important;
+    /* Accent blue icons */
+}
+
+.services-section .title,
+.services-section .title a,
+.services-section h2 {
+    color: #0B3C5D !important;
+    /* Dark blue headings */
+}
+
+/* Content-box: dark semi-transparent card instead of white box */
+.services-section .project-block .inner-box .content-box,
+.services-section .service-block .inner-box .content-box {
+    background-color: rgba(15, 30, 60, 0.82) !important;
+}
+
+.services-section .project-block .inner-box .content-box .title,
+.services-section .project-block .inner-box .content-box .title a,
+.services-section .service-block .inner-box .content-box .title,
+.services-section .service-block .inner-box .content-box .title a {
+    color: #ffffff !important;
+}
+
+/* Reduce hover blue overlay opacity so text stays readable */
+.services-section .project-block .inner-box .content-box:before,
+.services-section .service-block .inner-box .content-box:before {
+    background-color: rgba(41, 42, 87, 0.75) !important;
+}
+
+.services-section .project-block .inner-box:hover .content-box .title,
+.services-section .project-block .inner-box:hover .content-box .title a,
+.services-section .service-block .inner-box:hover .content-box .title,
+.services-section .service-block .inner-box:hover .content-box .title a {
+    color: #ffffff !important;
+}
+
+
+/* 
+======================================================
+   SECTION 2: "PROFESSIONAL & SECURED" (Assuming .video-section or similar parallax feature)
+======================================================
+*/
+/* Applies a dark blue overlay to background images retaining content */
+.video-section .bg-image,
+.bg-image-overlay {
+    background-color: rgba(11, 60, 93, 0.6) !important;
+    background-blend-mode: overlay !important;
+}
+
+.video-section .title,
+.video-section .text,
+.video-section h2,
+.video-section .sec-title h2 {
+    color: #FFFFFF !important;
+}
+
+.video-section .icon,
+.video-section .icon-box,
+.video-section .feature-block-two .icon {
+    background-color: #0F52BA !important;
+    /* Accent blue icon background */
+    color: #FFFFFF !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+
+
+/* 
+======================================================
+   SECTION 3: STATS NUMBERS SECTION (.funfacts-section)
+======================================================
+*/
+.funfacts-section {
+    background-color: #F8FAFC !important;
+    /* Light background */
+    background-image: none !important;
+    /* Remove patterns */
+}
+
+.funfacts-section .count-text,
+.funfacts-section .count-box {
+    color: #0B3C5D !important;
+    /* Dark blue numbers */
+    font-weight: bold !important;
+}
+
+.funfacts-section .counter-title,
+.funfacts-section .title {
+    color: #1E3A8A !important;
+    /* Secondary blue labels */
+}
+
+.funfacts-section .icon,
+.funfacts-section .icon-box img {
+    color: #0F52BA !important;
+    /* Accent blue */
+    /* If icons are images, we might use CSS filters to tint them, but we'll try direct targeting first */
+}
+
+
+/* 
+======================================================
+   SECTION 4: BLUE CTA AREA (.subscribe-section / info-banner)
+======================================================
+*/
+.subscribe-section,
+.info-banner .content-box {
+    background-color: #0B3C5D !important;
+    /* Dark blue background */
+    background-image: none !important;
+}
+
+.subscribe-section .title,
+.subscribe-section p,
+.subscribe-section .text,
+.info-banner .title,
+.info-banner .text {
+    color: #FFFFFF !important;
+}
+
+.subscribe-section .icon,
+.info-banner .icon,
+.info-banner .icon-two {
+    color: #FFFFFF !important;
+    /* White or light blue icons */
+}
+
+.info-banner .info-btn-two,
+.info-banner .info-btn-two small,
+.info-banner .info-btn-two strong,
+.info-banner .info-btn-two i {
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+}
+
+/* Handled globally but specifically targeting CTA inputs if needed */
+.subscribe-section .theme-btn {
+    background-color: #0F52BA !important;
+    color: #FFFFFF !important;
+}
+
+.subscribe-section .theme-btn:hover {
+    background-color: #1E3A8A !important;
+}
+
+
+/* 
+======================================================
+   SECTION 5: CONTACT FORM AREA (.contact-form)
+======================================================
+*/
+/* The wrapper containing the contact form */
+.contact-section,
+.faq-section .form-column .inner-column {
+    background-color: #0B3C5D !important;
+    /* Keep blue */
+}
+
+.contact-form .title,
+.contact-form h3 {
+    color: #FFFFFF !important;
+    /* White text heading */
+}
+
+.contact-form .form-control {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    /* Dark grey text */
+    border: 1px solid #E5E7EB !important;
+    /* Light grey border */
+}
+
+.contact-form .form-control::placeholder {
+    color: #94A3B8 !important;
+    /* Lighter grey for placeholder */
+}
+
+
+/* 
+======================================================
+   SECTION 6: FAQ AREA (.faq-section)
+======================================================
+*/
+.faq-section {
+    background-color: #FFFFFF !important;
+    /* Base white backing */
+}
+
+.faq-section .sec-title h2,
+.faq-section .sec-title .title {
+    color: #0B3C5D !important;
+    /* "Get Answers" text dark blue */
+}
+
+.faq-section .accordion.block {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    /* Light grey border */
+    border-radius: 6px !important;
+    margin-bottom: 10px !important;
+}
+
+.faq-section .acc-btn,
+.faq-section .acc-btn.active {
+    color: #0B3C5D !important;
+    /* Question text */
+    background: transparent !important;
+}
+
+.faq-section .acc-btn .icon {
+    color: #0F52BA !important;
+    /* Dropdown icon accent blue */
+}
+
+
+/* 
+======================================================
+   SECTION 7: FOOTER (.main-footer)
+======================================================
+*/
+/* Countries section spacing */
+.countries-section {
+    padding-bottom: 80px !important;
+}
+
+.countries-section .country-block .inner-box {
+    transition: background-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.countries-section .country-block .inner-box:hover {
+    opacity: 1 !important;
+    background-color: #0F52BA !important;
+    box-shadow: 0 8px 28px rgba(15, 82, 186, 0.35) !important;
+}
+
+.countries-section .country-block .inner-box img {
+    transition: transform 0.25s ease !important;
+}
+
+.countries-section .country-block .inner-box:hover img {
+    opacity: 1 !important;
+    transform: scale(1.25) !important;
+    filter: none !important;
+    transition: transform 0.25s ease !important;
+}
+
+.countries-section .country-block .inner-box:hover .title,
+.countries-section .country-block .inner-box:hover h6 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+.countries-section .country-block .inner-box:hover i {
+    color: #ffffff !important;
+}
+
+/* Remove truck icon above sub-titles */
+.countries-section .sec-title .sub-title::before,
+.about-section .sec-title .sub-title::before,
+.features-section .sub-title::before,
+.features-section .sub-title-outer .sub-title::before,
+.faq-section .sec-title .sub-title::before,
+.faq-section .sub-title::before {
+    display: none !important;
+}
+
+.main-footer {
+    border-top: none !important;
+    background-color: #0B3C5D !important;
+    /* Dark blue background */
+    background-image: none !important;
+}
+
+.main-footer h1,
+.main-footer h2,
+.main-footer h3,
+.main-footer h4,
+.main-footer h5,
+.main-footer h6,
+.main-footer .widget-title,
+.main-footer .text,
+.main-footer p,
+.footer-bottom .copyright-text,
+.footer-bottom .text {
+    color: #FFFFFF !important;
+    /* All text white */
+}
+
+.main-footer .list-style-two li a,
+.main-footer .user-links li a,
+.main-footer .contact-list-two li a,
+.main-footer .contact-list-two li,
+.main-footer a {
+    color: #93C5FD !important;
+    /* Light blue links */
+}
+
+.main-footer a:hover,
+.main-footer .user-links li a:hover {
+    color: #0F52BA !important;
+    /* Hover state */
+}
+
+.main-footer .icon,
+.main-footer i {
+    color: #FFFFFF !important;
+    /* White icons */
+}
+
+
+/* 
+======================================================
+   GENERAL CARDS / FALLBACKS
+======================================================
+*/
+.feature-block .inner-box,
+.news-block .inner-box,
+.testimonial-block .inner-box,
+.pricing-block .inner-box {
+    background-color: #FFFFFF !important;
+    border-radius: 8px !important;
+    border: 1px solid #f1f5f9 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+    /* Very subtle shadow */
+}
+
+.feature-block .inner-box:hover,
+.news-block .inner-box:hover {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(11, 60, 93, 0.08) !important;
+}
+
+img {
+    border-radius: 8px !important;
+}
+
+.logo img,
+.nav-logo img,
+.main-header img,
+.main-footer img,
+.client-logo img {
+    border-radius: 0 !important;
+}
+
+main-footer img,
+.client-logo img {
+    border-radius: 0 !important;
+}
+
+/* 
+======================================================
+   WELCOME SECTION
+======================================================
+*/
+.welcome-section {
+    background-color: #FFFFFF;
+    padding: 65px 0 20px;
+}
+
+.welcome-section .welcome-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.welcome-section .sub-title {
+    display: block;
+    color: #0F52BA;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 21px;
+    margin-right: -21px;
+    /* Center alignment offset for trailing letter-spacing */
+    margin-bottom: 8px;
+}
+
+.welcome-section .main-title {
+    color: #0F172A;
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    letter-spacing: -1.5px;
+}
+
+.welcome-section .description {
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .welcome-section {
+        padding: 50px 0 15px;
+    }
+
+    .welcome-section .sub-title {
+        font-size: 16px;
+        letter-spacing: 8px;
+        margin-right: -8px;
+    }
+
+    .welcome-section .main-title {
+        font-size: 42px;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+    }
+
+    .welcome-section .description {
+        font-size: 16px;
+    }
+}
+
+/* Adjust services section top padding so it flows nicely from the welcome section */
+.services-section {
+    padding-top: 40px !important;
+}
+
+/* 
+======================================================
+   VISION, MISSION & VALUES (ABOUT SECTION)
+======================================================
+*/
+.vmv-section {
+    border-top: 1px solid #eef2f6;
+}
+
+.vmv-card {
+    background-color: #F8FAFC;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.vmv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(11, 60, 93, 0.08);
+}
+
+.vmv-title {
+    color: #0F172A;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.vmv-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #0F52BA;
+    border-radius: 2px;
+}
+
+.vmv-text {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =======================================================================
+   RESPONSIVE LAYOUT FIXES (Zooming Out / Minimizing)
+======================================================================= */
+body, html {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    width: 100% !important;
+    min-width: 100vw !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+#root, .page-wrapper {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    width: 100% !important;
+    min-width: 100vw !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+.banner-section, .main-slider, .rev_slider_wrapper, .fullwidthbanner-container, ul.tp-revslider-mainul {
+    width: 100% !important;
+    min-width: 100vw !important;
+    max-width: none !important;
+}

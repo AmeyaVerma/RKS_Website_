@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Networking – RKS Global Logistics. Explore our global partnerships, agency network and collaborative approach to logistics." />
+  <title>Networking | RKS Global Logistics</title>
+  <link rel="icon" type="image/png" href="images/rks-logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Kintlog Theme CSS -->
+  <link rel="stylesheet" href="https://kintlog.com/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://kintlog.com/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://kintlog.com/css/flaticon.min.css">
+  <link rel="stylesheet" href="https://kintlog.com/css/linearicons.min.css">
+  <link rel="stylesheet" href="https://kintlog.com/css/style.css">
+  <link rel="stylesheet" href="https://kintlog.com/css/responsive.css">
+
+  <style>
+    /* ===== RESET PRELOADER ===== */
+    .preloader { display: none !important; }
+
+    /* ===== STICKY HEADER ===== */
+    .main-header {
+      position: sticky !important;
+      top: 0 !important;
+      z-index: 9999 !important;
+      background: #fff !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+      width: 100%;
+    }
+    .main-header .header-lower { background: #fff !important; }
+    .main-header .header-lower .main-box { min-height: 80px !important; }
+    .header-style-one .header-lower .logo-box::before { display: none !important; }
+    .main-header .header-lower .main-box {
+      display: flex !important;
+      align-items: stretch !important;
+      justify-content: space-between !important;
+      padding: 0 30px !important;
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+    .main-header .logo-box { margin-right: 20px; display: flex !important; align-items: stretch !important; }
+    .main-header .logo-box .logo { display: flex !important; align-items: center !important; }
+    .main-header .logo-box .logo img { height: 80px !important; max-height: none !important; width: auto !important; display: block !important; }
+    .main-header .nav-outer { flex: 1; }
+    .main-header .navigation {
+      display: flex !important;
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    .main-header .navigation > li > a {
+      display: block;
+      padding: 10px 18px;
+      color: #1a1a2e !important;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .main-header .navigation > li > a:hover,
+    .main-header .navigation > li.current > a { color: #e84040 !important; }
+    .main-header .navigation li.dropdown { position: relative; }
+    .main-header .navigation li.dropdown > ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+      min-width: 280px;
+      list-style: none;
+      padding: 8px 0;
+      margin: 0;
+      z-index: 9999;
+      border-top: 2px solid #e84040;
+    }
+    .main-header .navigation li.dropdown:hover > ul { display: block; }
+    .main-header .navigation li.dropdown > ul li a {
+      display: block;
+      padding: 9px 20px;
+      color: #333 !important;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .main-header .navigation li.dropdown > ul li a:hover {
+      color: #e84040 !important;
+      background: #fdf5f5;
+    }
+    .main-header .navigation li .dropdown-btn { display: none !important; }
+    .main-header .navigation > li > a::after { display: none !important; }
+    .main-header .outer-box {
+      display: flex !important;
+      align-items: center;
+      gap: 12px;
+    }
+    .main-header .info-btn-two {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      gap: 12px !important;
+      border: 1px solid #e0e0e0 !important;
+      border-radius: 6px !important;
+      padding: 8px 16px !important;
+      text-decoration: none !important;
+      background: #fff !important;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, border-color 0.22s ease !important;
+    }
+    .main-header .info-btn-two:hover {
+      transform: translateY(-3px) !important;
+      box-shadow: 0 8px 24px rgba(26, 71, 153, 0.28) !important;
+      background: #1a4799 !important;
+      border-color: #1a4799 !important;
+    }
+    .main-header .info-btn-two:hover svg { stroke: #fff !important; transition: stroke 0.22s ease; }
+    .main-header .info-btn-two:hover small { color: rgba(255,255,255,0.75) !important; }
+    .main-header .info-btn-two:hover strong { color: #fff !important; }
+    .main-header .info-btn-two small { color: #999; font-size: 12px; display: block; transition: color 0.22s ease; }
+    .main-header .info-btn-two strong { color: #1a2a4a; font-size: 16px; font-weight: 700; display: block; transition: color 0.22s ease; }
+    .main-header .sticky-header { display: none !important; }
+    @media (min-width: 992px) {
+      .main-header .mobile-nav-toggler { display: none !important; }
+      .mobile-menu { display: none !important; }
+    }
+    @media (max-width: 991px) {
+      .main-header .nav-outer { display: none !important; }
+      .main-header .info-btn-two { display: none !important; }
+      .main-header .mobile-nav-toggler { display: block !important; }
+    }
+
+    /* ===== NEW LOGO CONTAINMENT ===== */
+    .main-header .header-lower { height: 80px !important; max-height: 80px !important; }
+    .main-header .header-lower .main-box { height: 80px !important; padding-top: 0 !important; padding-bottom: 0 !important; align-items: center !important; }
+    .main-header .header-lower .logo-box { height: 100% !important; padding: 0 !important; margin: 0 !important; display: flex; align-items: center; overflow: hidden !important; }
+    .main-header .logo { height: 100%; display: flex; align-items: center; }
+    .main-header .logo img { max-height: none !important; height: 130px !important; width: auto !important; object-fit: contain; transform: none !important; margin: 0 !important; }
+    /* ============================== */
+    /* ===== PAGE TITLE ===== */
+    #main-page-title {
+      position: relative !important;
+      margin-top: 0 !important;
+      padding-top: 130px !important;
+      padding-bottom: 80px !important;
+      background-color: #1a2a4a !important;
+      background-image: url('https://kintlog.com/images/background/1.jpg') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      text-align: center !important;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+    }
+    #main-page-title::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10,20,50,0.65);
+      z-index: 1;
+    }
+    #main-page-title .auto-container,
+    #main-page-title .title-outer {
+      position: relative !important;
+      z-index: 2 !important;
+      width: 100%;
+      background: transparent !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      border: none !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    #main-page-title::after { display: none !important; content: none !important; }
+    #main-page-title h1,
+    #main-page-title .title {
+      color: #fff !important;
+      font-size: 42px !important;
+      font-weight: 700 !important;
+      margin: 0 0 16px 0 !important;
+      padding: 0 !important;
+      line-height: 1.2 !important;
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      transform: none !important;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    #main-page-title .page-breadcrumb {
+      display: flex !important;
+      justify-content: center !important;
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      gap: 8px;
+      position: relative;
+      z-index: 2;
+    }
+    #main-page-title .page-breadcrumb li { color: rgba(255,255,255,0.80); font-size: 15px; }
+    #main-page-title .page-breadcrumb li::after { content: '/'; margin-left: 8px; }
+    #main-page-title .page-breadcrumb li:last-child::after { display: none; }
+    #main-page-title .page-breadcrumb li a { color: #fff; text-decoration: none; font-weight: 600; }
+    #main-page-title .page-breadcrumb li a:hover { text-decoration: underline; }
+
+    /* ===== NETWORKING SECTION ===== */
+    .networking-section { padding: 80px 0 70px; }
+    .networking-section .container { max-width: 1200px; margin: 0 auto; padding: 0 30px; }
+
+    .networking-section .sec-title { margin-bottom: 36px; }
+    .networking-section .sec-title .sub-title {
+      display: inline-block;
+      background: #e84040;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+    .networking-section .sec-title h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #1a2a4a;
+      margin: 0 0 10px;
+      line-height: 1.25;
+    }
+    .networking-section .text-block p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .networking-section .text-block p:last-child { margin-bottom: 0; }
+
+    /* Feature list */
+    .networking-section .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 28px 0 0;
+    }
+    .networking-section .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 15px;
+      color: #333;
+    }
+    .networking-section .feature-list li .icon-box {
+      width: 38px;
+      height: 38px;
+      background: #1a4799;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .networking-section .feature-list li .icon-box svg { display: block; }
+    .networking-section .feature-list li .feat-text strong { display: block; font-weight: 700; color: #1a2a4a; margin-bottom: 2px; }
+
+    /* Image column */
+    .networking-section .net-image-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      position: relative;
+    }
+    .networking-section .net-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
+    }
+
+    /* Stats strip */
+    .stats-strip {
+      background: #1a4799;
+      padding: 36px 0;
+    }
+    .stats-strip .container { max-width: 1200px; margin: 0 auto; padding: 0 30px; }
+    .stats-strip .stats-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stats-strip .stat-item { text-align: center; }
+    .stats-strip .stat-item .num { font-size: 42px; font-weight: 800; color: #fff; line-height: 1; }
+    .stats-strip .stat-item .label { font-size: 13px; color: rgba(255,255,255,0.75); text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; }
+
+    /* Subscribe Banner */
+    .subscribe-banner {
+      background: #e84040;
+      background-image: url('https://kintlog.com/images/background/6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+      padding: 38px 0;
+    }
+    .subscribe-banner .sub-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .subscribe-banner .sub-icon { width: 90px; flex-shrink: 0; }
+    .subscribe-banner .sub-icon img { width: 100%; }
+    .subscribe-banner .sub-text { flex: 1; }
+    .subscribe-banner .sub-text h4 { color: #fff; font-size: 24px; font-weight: 700; margin: 0; line-height: 1.35; }
+    .subscribe-banner .sub-form { flex: 1; max-width: 420px; }
+    .subscribe-banner .sub-input-wrap {
+      display: flex;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      align-items: center;
+      padding: 0 0 0 14px;
+    }
+    .subscribe-banner .sub-input-wrap input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 13px 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    .subscribe-banner .sub-input-wrap button {
+      background: #1a2a4a;
+      color: #fff;
+      border: none;
+      padding: 14px 18px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .subscribe-banner .sub-input-wrap button:hover { background: #0f1c35; }
+    @media (max-width: 767px) {
+      .subscribe-banner .sub-inner { flex-direction: column; text-align: center; }
+      .subscribe-banner .sub-form { width: 100%; max-width: 100%; }
+      .subscribe-banner .sub-icon { display: none; }
+      .networking-section .net-image-wrap { min-height: 280px; margin-top: 30px; }
+      .stats-strip .stats-row { gap: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="main-header header-style-one">
+  <div class="header-lower">
+    <div class="main-box">
+      <div class="logo-box">
+        <div class="logo">
+          <a href="index.html"><img src="images/rks-logo.png" alt="RKS Global Logistics Logo" style="max-height:110px;width:auto;"></a>
+        </div>
+      </div>
+
+      <div class="nav-outer">
+        <nav class="nav main-menu">
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="services.html">Services</a>
+              <ul>
+                <li><a href="services/sea-freight.html">Sea Freight Solutions</a></li>
+                <li><a href="services/Warehousing.html">Warehousing Solutions</a></li>
+                <li><a href="services/container-freight.html">Container Freight Station</a></li>
+                <li><a href="services/odc-project-cargo.html">ODC And Project Cargo</a></li>
+                <li><a href="services/air-freight.html">Air Freight</a></li>
+                <li><a href="services/custom-clearance.html">Custom Clearance And Compliance</a></li>
+                <li><a href="services/transport-solutions.html">Transport Solutions</a></li>
+                <li><a href="services/value-added-services.html">Value Added Services</a></li>
+              </ul>
+            </li>
+            <li class="current"><a href="networking.html">Networking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="outer-box">
+        <a href="tel:+918655944515" class="info-btn-two">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#1a4799" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <path d="M7 4 C7 4 5 5.5 5 9 C5 17.5 14.5 27 23 27 C26.5 27 28 25 28 25 L23.5 20.5 L21 23 C21 23 17 20 13.5 16.5 C10 13 10 11 10 11 L12.5 8.5 Z"/>
+            <line x1="22" y1="5" x2="22" y2="13"/>
+            <line x1="18" y1="9" x2="26" y2="9"/>
+          </svg>
+          <span style="display:flex;flex-direction:column;align-items:flex-start;">
+            <small>Call for inquiry</small>
+            <strong>+91 86559 44515</strong>
+          </span>
+        </a>
+        <div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="menu-backdrop"></div>
+    <nav class="menu-box">
+      <div class="upper-box">
+        <div class="nav-logo">
+          <a href="index.html"><img src="images/rks-logo.png" alt="Logo" style="max-height:69px;width:auto;"></a>
+        </div>
+        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+      </div>
+      <ul class="navigation clearfix">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services</a>
+          <ul>
+            <li><a href="services/sea-freight.html">Sea Freight Solutions</a></li>
+            <li><a href="services/Warehousing.html">Warehousing Solutions</a></li>
+            <li><a href="services/container-freight.html">Container Freight Station</a></li>
+            <li><a href="services/odc-project-cargo.html">ODC And Project Cargo</a></li>
+            <li><a href="services/air-freight.html">Air Freight</a></li>
+            <li><a href="services/custom-clearance.html">Custom Clearance And Compliance</a></li>
+            <li><a href="services/transport-solutions.html">Transport Solutions</a></li>
+            <li><a href="services/value-added-services.html">Value Added Services</a></li>
+          </ul>
+          <div class="dropdown-btn"><i class="fa fa-angle-down"></i></div>
+        </li>
+        <li class="current"><a href="networking.html">Networking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="contact-list-one">
+        <li>
+          <i class="icon lnr-icon-phone-handset"></i>
+          <span class="title">Call Now</span>
+          <div class="text"><a href="tel:+918655944515">+91 86559 44515</a></div>
+        </li>
+        <li>
+          <i class="icon lnr-icon-envelope1"></i>
+          <span class="title">Send Email</span>
+          <div class="text"><span>kam@kintlog.com</span></div>
+        </li>
+        <li>
+          <i class="icon lnr-icon-map-marker"></i>
+          <span class="title">Address</span>
+          <div class="text">Crescent Business Square, Office No. 1009, 10th Floor, Opp Gundecha Onclave, Kherani Road, Saki Naka, Mumbai - 400076, India.</div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ==================== END HEADER ==================== -->
+
+
+<!-- ==================== PAGE TITLE ==================== -->
+<section id="main-page-title" class="page-title">
+  <div class="auto-container">
+    <div class="title-outer text-center">
+      <h1 class="title">Networking</h1>
+      <ul class="page-breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Networking</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ==================== END PAGE TITLE ==================== -->
+
+
+<!-- ==================== NETWORKING SECTION ==================== -->
+<section class="networking-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Text Column (Left) -->
+      <div class="col-lg-6 col-md-12">
+        <div class="sec-title">
+          <h2>Global Partnerships &amp;<br>Collaborative Growth</h2>
+        </div>
+        <div class="text-block">
+          <p>We pride ourselves on our extensive collaboration both within India and on a global scale. Through our robust agency network and strategic partnerships, we continuously strengthen our relationships with customers while expanding our global logistics reach. This collaborative approach not only enhances our business growth but also enables us to effectively serve our clients' needs across the globe.</p>
+          <p>Our premier logistics network offers unparalleled access to new international markets, providing our clients with unparalleled opportunities for expansion and market penetration. By leveraging our network, clients can tap into new territories and unlock growth opportunities previously inaccessible.</p>
+          <p>At the heart of our approach is a commitment to fostering cooperation and collective success. We believe that by working together with our clients and partners, we can achieve greater outcomes and drive mutual growth. Through open communication, shared goals, and a dedication to excellence, we create an environment conducive to innovation and progress.</p>
+        </div>
+
+        <ul class="feature-list">
+          <li>
+            <div class="icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="feat-text">
+              <strong>Global Reach</strong>
+              Access to international markets and logistics hubs worldwide.
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="feat-text">
+              <strong>Strategic Partnerships</strong>
+              Long-term alliances with trusted agents across every major trade lane.
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="feat-text">
+              <strong>Advanced Technology</strong>
+              State-of-the-art tracking systems and supply chain solutions.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Image Column (Right) -->
+      <div class="col-lg-6 col-md-12">
+        <div class="net-image-wrap">
+          <img src="images/networking-map" alt="Global Logistics Network Map">
+        </div>
+      </div>
+
+    </div><!-- /.row -->
+
+    <!-- Second text block -->
+    <div class="row" style="margin-top: 60px;">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="text-block">
+          <p>Furthermore, we are dedicated to providing our customers with state-of-the-art tools and technology to empower their business growth. From advanced tracking systems to innovative supply chain solutions, we equip our clients with the resources they need to stay competitive in today's dynamic market landscape.</p>
+          <p>In essence, our collaborative approach, combined with our cutting-edge technology and global reach, positions us as a trusted partner for businesses looking to expand their horizons and achieve sustainable growth in an increasingly interconnected world.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+</section>
+<!-- ==================== END NETWORKING SECTION ==================== -->
+
+
+<!-- ==================== STATS STRIP ==================== -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="num">50+</div>
+        <div class="label">Countries Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">200+</div>
+        <div class="label">Global Partners</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">25+</div>
+        <div class="label">Years of Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="num">5000+</div>
+        <div class="label">Shipments Delivered</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== END STATS STRIP ==================== -->
+
+
+
+
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="main-footer footer-style-one">
+  <div class="bg bg-image" style="background-image:url('images/extracted/asset_59.webp')"></div>
+  <div class="icon-plane-3 bounce-x"></div>
+  <div class="widgets-section">
+    <div class="auto-container">
+      <div class="row">
+
+        <div class="footer-column col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget about-widget">
+            <div class="widget-content">
+              <div class="logo">
+                <img src="images/rks-logo.png" alt="RKS Global Logistics Logo" style="width:57.5%;">
+              </div>
+              <div class="text">RKS Global Logistics provides customized services across all verticals, which are cost-effective and helpful in delivering the best logistical solutions.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+          <div class="footer-widget links-widget">
+            <h5 class="widget-title">Our Services</h5>
+            <div class="widget-content service-2">
+              <ul class="user-links">
+                <li><i class="fa fa-angles-right"></i> Sea Freight Solutions</li>
+                <li><i class="fa fa-angles-right"></i> Warehousing Solutions</li>
+                <li><i class="fa fa-angles-right"></i> Container Freight Station</li>
+                <li><i class="fa fa-angles-right"></i> ODC And Project Cargo</li>
+              </ul>
+              <ul class="user-links">
+                <li><i class="fa fa-angles-right"></i> Air Freight</li>
+                <li><i class="fa fa-angles-right"></i> Custom Clearance And Compliance</li>
+                <li><i class="fa fa-angles-right"></i> Transport Solutions</li>
+                <li><i class="fa fa-angles-right"></i> Value Added Services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+          <div class="footer-widget contact-widget">
+            <h5 class="widget-title">Contact Us</h5>
+            <div class="widget-content">
+              <ul class="contact-list-two">
+                <li><i class="fal fa-phone"></i> +91 86559 44515</li>
+                <li><i class="fal fa-envelope"></i> <span>kam@kintlog.com</span></li>
+                <li><i class="fal fa-map-marker-alt"></i> Crescent Business Square, Office No. 1009, 10th Floor, Opp Gundecha Onclave, Kherani Road, Saki Naka, Mumbai - 400076, India.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="auto-container">
+      <div class="inner-container">
+        <div class="copyright-text">
+          Copyright &copy; 2026 RKS Global Logistics Pvt. Ltd. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ==================== END FOOTER ==================== -->
+
+<script src="https://kintlog.com/js/jquery-3.7.1.min.js"></script>
+<script src="https://kintlog.com/js/bootstrap.bundle.min.js"></script>
+<script src="https://kintlog.com/js/appear.min.js"></script>
+<script src="https://kintlog.com/js/script.js"></script>
+</body>
+</html>
+pm
