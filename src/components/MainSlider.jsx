@@ -3,8 +3,8 @@ import parse from 'html-react-parser';
 
 const MainSlider = () => {
     const htmlString = `<section class=main-slider>
- <div class="rev_slider_wrapper fullwidthbanner-container" id=rev_slider_one_wrapper data-source=gallery style=overflow:visible;height:1170px>
- <div class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" id=rev_slider_one data-version=5.4.1 style=margin-top:0px;margin-bottom:0px;height:1170px data-slideactive=rs-2>
+ <div class="rev_slider_wrapper fullwidthbanner-container" id=rev_slider_one_wrapper data-source=gallery style=overflow:visible;height:500px>
+ <div class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" id=rev_slider_one data-version=5.4.1 style=margin-top:0px;margin-bottom:0px;height:500px data-slideactive=rs-2>
  <ul class=tp-revslider-mainul style=visibility:visible;display:block;overflow:hidden;width:100%;height:100%;max-height:none;left:0px>
  <li data-index=rs-1 data-transition=zoomout class=tp-revslider-slidesli style=perspective:6000px;width:100%;height:100%;overflow:hidden;z-index:18;visibility:hidden;opacity:0;background-color:rgba(255,255,255,0)>
  <div class=slotholder style=position:absolute;top:0px;left:0px;z-index:0;width:100%;height:100%;visibility:inherit;opacity:1;transform:matrix(1,0,0,1,0,0)><div class="tp-dottedoverlay on"></div><div class="tp-bgimg defaultimg" data-bgcolor=undefined style="background-repeat:no-repeat;background-image:var(--sf-img-88);background-size:cover;background-position:center center;width:100%;height:100%;opacity:0;visibility:hidden;z-index:20" src="images/main-slider/1.webp"></div></div>

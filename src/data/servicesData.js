@@ -3,7 +3,7 @@ const servicesData = [
     slug: "sea-freight",
     title: "Sea Freight Solutions",
     description: "The most reliable and cost-effective solution for your Full Container Load and Less than Container Load.",
-    image: "https://kintlog.com/images/resource/Sea-d.webp",
+    image: "/images/services/sea-freight-premium.png",
     content: [
       {
         type: "paragraph",
@@ -55,7 +55,7 @@ const servicesData = [
     slug: "air-freight",
     title: "Air Freight",
     description: "Time-critical air cargo solutions with global airline partnerships and door-to-door delivery.",
-    image: "/images/services/air-cargo.avif",
+    image: "/images/services/air-freight-v2.png",
     content: [
       {
         type: "paragraph",
@@ -87,7 +87,7 @@ const servicesData = [
     slug: "custom-clearance",
     title: "Custom Clearance And Compliance",
     description: "Expert customs brokerage, duty optimization, and trade compliance advisory services.",
-    image: "/images/services/custom-img.png",
+    image: "/images/services/customs-premium.png",
     content: [
       {
         type: "paragraph",

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -7,42 +7,42 @@ import 'swiper/css/pagination';
 const slides = [
   {
     title: 'Sea Freight Solutions',
-    img: '/images/extracted/asset_1.webp',
+    img: '/images/services/sea-freight-premium.png',
     href: '/services/sea-freight.html',
   },
   {
     title: 'Warehousing Solutions',
-    img: '/images/extracted/asset_2.webp',
+    img: '/images/services/warehousing-premium.png',
     href: '/services/Warehousing.html',
   },
   {
     title: 'Container Freight Station',
-    img: '/images/services/container-cargo.jpg',
+    img: '/images/services/cfs-premium.png',
     href: '/services/container-freight.html',
   },
   {
-    title: 'ODC And Project Cargo',
-    img: '/images/extracted/asset_4.webp',
+    title: 'ODC & Project Cargo Solutions',
+    img: '/images/services/odc-premium.png',
     href: '/services/odc-project-cargo.html',
   },
   {
-    title: 'Air Freight',
-    img: '/images/extracted/asset_6.webp',
+    title: 'Air Freight Solutions',
+    img: '/images/services/air-freight-v2.png',
     href: '/services/air-freight.html',
   },
   {
-    title: 'Custom Clearance And Compliance',
-    img: '/images/extracted/asset_5.webp',
+    title: 'Custom Clearance Solutions',
+    img: '/images/services/customs-premium.png',
     href: '/services/custom-clearance.html',
   },
   {
     title: 'Transport Solutions',
-    img: '/images/extracted/asset_7.webp',
+    img: '/images/services/transport-premium.png',
     href: '/services/transport-solutions.html',
   },
   {
-    title: 'Value Added Services',
-    img: '/images/services/value-img.jpeg',
+    title: 'Value Added Solutions',
+    img: '/images/services/value-added-premium.png',
     href: '/services/value-added-services.html',
   },
 ];
@@ -65,9 +65,9 @@ const Services = () => {
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             breakpoints={{
-              0:    { slidesPerView: 1 },
-              768:  { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              320:  { slidesPerView: 1, spaceBetween: 10 },
+              768:  { slidesPerView: 2, spaceBetween: 20 },
+              1024: { slidesPerView: 3, spaceBetween: 30 },
             }}
           >
             {slides.map((slide) => (
