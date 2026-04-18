@@ -2,8 +2,8 @@ import React from 'react';
 
 const Welcome = () => {
     return (
-        <section className="welcome-section pt-5 pb-0 bg-white text-center">
-            <div className="container">
+        <section className="welcome-section pt-5 pb-0 bg-white d-flex justify-content-center">
+        <div className="container text-center">
                 <span className="welcome-eyebrow d-block mb-2" style={{ color: '#0F52BA', fontSize: '13px', fontWeight: '600', letterSpacing: '4px', textTransform: 'uppercase' }}>
                     Welcome To
                 </span>
