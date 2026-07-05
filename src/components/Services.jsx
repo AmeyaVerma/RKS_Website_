@@ -8,42 +8,42 @@ const slides = [
   {
     title: 'Sea Freight Solutions',
     img: '/images/services/sea-freight-premium.png',
-    href: '/services/sea-freight.html',
+    href: '/services/sea-freight',
   },
   {
     title: 'Warehousing Solutions',
     img: '/images/services/warehousing-premium.png',
-    href: '/services/Warehousing.html',
+    href: '/services/warehousing',
   },
   {
     title: 'Container Freight Station',
     img: '/images/services/cfs-premium.png',
-    href: '/services/container-freight.html',
+    href: '/services/container-freight',
   },
   {
     title: 'ODC & Project Cargo Solutions',
     img: '/images/services/odc-premium.png',
-    href: '/services/odc-project-cargo.html',
+    href: '/services/odc-project-cargo',
   },
   {
     title: 'Air Freight Solutions',
     img: '/images/services/air-freight-v2.png',
-    href: '/services/air-freight.html',
+    href: '/services/air-freight',
   },
   {
     title: 'Custom Clearance Solutions',
     img: '/images/services/customs-premium.png',
-    href: '/services/custom-clearance.html',
+    href: '/services/custom-clearance',
   },
   {
     title: 'Transport Solutions',
     img: '/images/services/transport-premium.png',
-    href: '/services/transport-solutions.html',
+    href: '/services/transport-solutions',
   },
   {
     title: 'Value Added Solutions',
     img: '/images/services/value-added-premium.png',
-    href: '/services/value-added-services.html',
+    href: '/services/value-added-services',
   },
 ];
 

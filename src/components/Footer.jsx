@@ -24,19 +24,19 @@ const Footer = () => {
             <h5 class="widget-title">Our Services</h5>
             <div class="widget-content service-2">
               <ul class="user-links">
-                <li><i class="fa fa-angles-right"></i><a href="/services/sea-freight.html">Sea Freight Solutions</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/Warehousing.html">Warehousing Solutions</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/container-freight.html">Container Freight Station</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/odc-project-cargo.html">ODC And Project Cargo</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/custom-clearance.html">Custom Clearance</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/consolidation.html">Consolidation Services</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/sea-freight">Sea Freight Solutions</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/warehousing">Warehousing Solutions</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/container-freight">Container Freight Station</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/odc-project-cargo">ODC And Project Cargo</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/custom-clearance">Custom Clearance</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/consolidation">Consolidation Services</a></li>
               </ul>
               <ul class="user-links">
-                <li><i class="fa fa-angles-right"></i><a href="/services/air-freight.html">Air Freight</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/transport-solutions.html">Transport Solutions</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/value-added-services.html">Value Added Services</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/nvocc.html">NVOCC Services</a></li>
-                <li><i class="fa fa-angles-right"></i><a href="/services/nrior.html">NR-IOR Services</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/air-freight">Air Freight</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/transport-solutions">Transport Solutions</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/value-added-services">Value Added Services</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/nvocc">NVOCC Services</a></li>
+                <li><i class="fa fa-angles-right"></i><a href="/services/nrior">NR-IOR Services</a></li>
               </ul>
             </div>
           </div>

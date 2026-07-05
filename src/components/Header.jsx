@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,21 +38,21 @@ const Header = () => {
                                 <li><a href="/#about">About</a></li>
                                 <li className="dropdown"><a href="/#services">Services</a>
                                     <ul>
-                                        <li><a href="/services/sea-freight.html">Sea Freight Solutions</a></li>
-                                        <li><a href="/services/Warehousing.html">Warehousing Solutions</a></li>
-                                        <li><a href="/services/container-freight.html">Container Freight Station</a></li>
-                                        <li><a href="/services/odc-project-cargo.html">ODC & Project Cargo</a></li>
-                                        <li><a href="/services/air-freight.html">Air Freight</a></li>
-                                        <li><a href="/services/custom-clearance.html">Custom Clearance</a></li>
-                                        <li><a href="/services/transport-solutions.html">Transport Solutions</a></li>
-                                        <li><a href="/services/value-added-services.html">Value Added Services</a></li>
-                                        <li><a href="/services/consolidation.html">Consolidation</a></li>
-                                        <li><a href="/services/nvocc.html">NVOCC</a></li>
-                                        <li><a href="/services/nrior.html">NR-IOR</a></li>
+                                        <li><Link to="/services/sea-freight">Sea Freight Solutions</Link></li>
+                                        <li><Link to="/services/warehousing">Warehousing Solutions</Link></li>
+                                        <li><Link to="/services/container-freight">Container Freight Station</Link></li>
+                                        <li><Link to="/services/odc-project-cargo">ODC & Project Cargo</Link></li>
+                                        <li><Link to="/services/air-freight">Air Freight</Link></li>
+                                        <li><Link to="/services/custom-clearance">Custom Clearance</Link></li>
+                                        <li><Link to="/services/transport-solutions">Transport Solutions</Link></li>
+                                        <li><Link to="/services/value-added-services">Value Added Services</Link></li>
+                                        <li><Link to="/services/consolidation">Consolidation</Link></li>
+                                        <li><Link to="/services/nvocc">NVOCC</Link></li>
+                                        <li><Link to="/services/nrior">NR-IOR</Link></li>
                                     </ul>
                                 </li>
-                                <li><a href="/networking.html">Networking</a></li>
-                                <li><a href="/contact.html">Contact</a></li>
+                                <li><Link to="/networking">Networking</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </nav>
                     </div>
@@ -86,8 +87,8 @@ const Header = () => {
                         <li><a href="/" onClick={closeMenu}>Home</a></li>
                         <li><a href="/#about" onClick={closeMenu}>About</a></li>
                         <li><a href="/#services" onClick={closeMenu}>Services</a></li>
-                        <li><a href="/networking.html" onClick={closeMenu}>Networking</a></li>
-                        <li><a href="/contact.html" onClick={closeMenu}>Contact</a></li>
+                        <li><Link to="/networking" onClick={closeMenu}>Networking</Link></li>
+                        <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
                     </ul>
                 </nav>
             </div>

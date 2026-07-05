@@ -64,7 +64,7 @@ const VideoSection = () => {
           <span style="color:#0d2d6e;font-weight:700;font-size:0.9rem;line-height:1.3">Global Network</span>
         </div>
       </div>
-      <a href="/contact.html" style="color:#0d2d6e;font-weight:600;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px">Request a quote &#8594;</a>
+      <a href="/contact" style="color:#0d2d6e;font-weight:600;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:7px">Request a quote &#8594;</a>
     </div>
   </div>
 </section>`;

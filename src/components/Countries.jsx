@@ -7,42 +7,42 @@ import 'swiper/css/pagination';
 const services = [
   {
     title: 'Sea Freight Solutions',
-    href: '/services/sea-freight.html',
+    href: '/services/sea-freight',
     img: 'https://api.iconify.design/mdi/ferry.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'Warehousing Solutions',
-    href: '/services/Warehousing.html',
+    href: '/services/warehousing',
     img: 'https://api.iconify.design/mdi/warehouse.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'Container Freight Station',
-    href: '/services/container-freight.html',
+    href: '/services/container-freight',
     img: 'https://api.iconify.design/mdi/train-car-container.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'ODC And Project Cargo',
-    href: '/services/odc-project-cargo.html',
+    href: '/services/odc-project-cargo',
     img: 'https://api.iconify.design/mdi/crane.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'Air Freight',
-    href: '/services/air-freight.html',
+    href: '/services/air-freight',
     img: 'https://api.iconify.design/mdi/airplane.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'Custom Clearance & Compliance',
-    href: '/services/custom-clearance.html',
+    href: '/services/custom-clearance',
     img: 'https://api.iconify.design/mdi/file-certificate.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'Transport Solutions',
-    href: '/services/transport-solutions.html',
+    href: '/services/transport-solutions',
     img: 'https://api.iconify.design/mdi/truck-delivery.svg?color=%23e84040&width=80&height=80',
   },
   {
     title: 'Value Added Services',
-    href: '/services/value-added-services.html',
+    href: '/services/value-added-services',
     img: 'https://api.iconify.design/mdi/star-circle.svg?color=%23e84040&width=80&height=80',
   },
 ];

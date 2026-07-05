@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const ContactPage = () => {
     return (
@@ -8,7 +9,7 @@ const ContactPage = () => {
             <div className="preloader" style={{ display: 'none' }}></div>
             <Header />
             <section className="page-title" style={{ 
-                backgroundImage: 'url("https://kintlog.com/images/resource/contact-bg.webp")',
+                backgroundImage: 'url("/images/ship.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center top',
                 padding: '130px 0 80px',
@@ -26,7 +27,7 @@ const ContactPage = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(10,20,50,0.65)', zIndex: 1 }}></div>
+                <div className="overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(10,20,50,0.72)', zIndex: 1 }}></div>
             </section>
 
             <section className="contact-section" style={{ padding: '70px 0 60px' }}>
@@ -58,13 +59,26 @@ const ContactPage = () => {
                                         </div>
                                     </div>
                                     <div className="mb-3">
+                                        <select name="service" className="form-control" style={{ background: '#f8fafd' }}>
+                                            <option value="" disabled defaultValue="">Select a Service (optional)</option>
+                                            <option value="sea-freight">Sea Freight Solutions</option>
+                                            <option value="warehousing">Warehousing Solutions</option>
+                                            <option value="container-freight">Container Freight Station</option>
+                                            <option value="odc-project-cargo">ODC And Project Cargo</option>
+                                            <option value="air-freight">Air Freight</option>
+                                            <option value="custom-clearance">Custom Clearance And Compliance</option>
+                                            <option value="transport">Transport Solutions</option>
+                                            <option value="value-added">Value Added Services</option>
+                                        </select>
+                                    </div>
+                                    <div className="mb-3">
                                         <textarea name="message" className="form-control" rows="6" placeholder="Your Message *" required style={{ background: '#f8fafd' }}></textarea>
                                     </div>
-                                    <button type="submit" className="theme-btn btn-style-one" style={{ 
-                                        background: '#1a4799', color: '#fff', border: 'none', 
-                                        padding: '14px 36px', borderRadius: '6px', fontWeight: 700 
+                                    <button type="submit" className="theme-btn btn-style-one" style={{
+                                        background: '#1a4799', color: '#fff', border: 'none',
+                                        padding: '14px 36px', borderRadius: '6px', fontWeight: 700
                                     }}>
-                                        Send Message
+                                        <i className="fa fa-paper-plane" style={{ marginRight: '8px' }}></i>Send Message
                                     </button>
                                 </form>
                             </div>
@@ -98,7 +112,9 @@ const ContactPage = () => {
                                     </div>
                                     <div>
                                         <h5 style={{ fontWeight: 700, margin: 0 }}>Our Office</h5>
-                                        <p style={{ color: '#555', margin: 0 }}>Crescent Business Square, No. 1009, Saki Naka, Mumbai.</p>
+                                        <p style={{ color: '#555', margin: 0 }}>Crescent Business Square, Office No. 1009, 10th Floor,<br />
+                                            Opp Gundecha Onclave, Kherani Road,<br />
+                                            Saki Naka, Mumbai – 400076, India.</p>
                                     </div>
                                 </div>
                             </div>
@@ -106,6 +122,23 @@ const ContactPage = () => {
                     </div>
                 </div>
             </section>
+
+            <div className="map-section">
+                <div className="container">
+                    <div className="map-wrap" style={{ borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.10)' }}>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.1913!2d72.8890!3d19.1017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9ade7f0782f%3A0xec6dae1bdfc026ca!2sCrescent%20Business%20Square!5e0!3m2!1sen!2sin!4v1741935560965!5m2!1sen!2sin"
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="RKS Global Logistics Office Location"
+                            style={{ display: 'block', width: '100%', height: '400px', border: 0 }}
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <Footer />
         </div>
     );
 };
